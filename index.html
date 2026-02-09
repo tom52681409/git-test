@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>todo list</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>todo list</h1>
+      <section class="composer">
+        <div class="input-row">
+          <input id="title-input" type="text" placeholder="new todo" />
+          <button id="add-btn" type="button">add</button>
+        </div>
+        <textarea id="desc-input" placeholder="description"></textarea>
+      </section>
+      <section class="list" id="list"></section>
+    </main>
+
+    <template id="item-template">
+      <div class="item">
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span class="text">
+            <span class="title"></span>
+            <span class="desc"></span>
+          </span>
+        </label>
+        <button class="delete" type="button">delete</button>
+      </div>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>
